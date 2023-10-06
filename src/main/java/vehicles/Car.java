@@ -35,4 +35,7 @@ public class Car extends Vehicle implements Driveable {
     public float getPriceAfterTax() {
         return getPrice() - (getPrice() * (getTAX_AMT() + this.extraTax));
     }
+    public String formattedPriceAfterTax() {
+        return String.format("%.2f", getPriceAfterTax());
+    }
 }

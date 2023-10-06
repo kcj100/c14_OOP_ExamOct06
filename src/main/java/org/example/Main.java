@@ -45,11 +45,9 @@ public class Main {
         VehicleApp.sortAndPrintDriveableVehiclesBySpeed(driveableArrayList);
 
         System.out.println(car1.getPriceAfterTax());
-        System.out.println(formattedPriceAfterTax(car1.getPriceAfterTax()));
+        System.out.println(car1.formattedPriceAfterTax());
 
     }
 
-    public static String formattedPriceAfterTax(float price) {
-        return String.format("%.2f", price);
-    }
+
 }
