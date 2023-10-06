@@ -1,5 +1,6 @@
 package org.example;
 
+import intefaces.Driveable;
 import intefaces.Flyable;
 import vehicles.*;
 
@@ -37,6 +38,11 @@ public class Main {
         for (Map.Entry<Integer, String> entry : passengers.info.entrySet()) {
             System.out.println(entry.getKey());
         }
+
+        Driveable[] driveables = new Driveable[] { boat1, truck1, car1, flyingCar1};
+        ArrayList<Driveable> driveableArrayList = new ArrayList<>(Arrays.asList(driveables));
+
+        VehicleApp.sortAndPrintDriveableVehiclesBySpeed(driveableArrayList);
 
         System.out.println(car1.getPriceAfterTax());
         System.out.println(formattedPriceAfterTax(car1.getPriceAfterTax()));
