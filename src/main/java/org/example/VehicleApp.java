@@ -21,7 +21,9 @@ public class VehicleApp {
 
     public static void sortAndPrintDriveableVehiclesBySpeed(List<Driveable> driveables) {
         driveables.sort(SPEEDCOMPARATOR);
-        System.out.println(driveables);
+        for( Driveable d : driveables) {
+            System.out.println(d);
+        }
     }
 
     private static final Comparator<Driveable> SPEEDCOMPARATOR =

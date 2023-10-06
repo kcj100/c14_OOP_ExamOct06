@@ -10,4 +10,11 @@ public class Engine {
     public Size getSize() {
         return size;
     }
+
+    @Override
+    public String toString() {
+        return "Engine{" +
+                "size=" + size +
+                '}';
+    }
 }
